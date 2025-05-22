@@ -6,6 +6,7 @@ items = [
 
 def addnewItem():
  items.append({"id":input("enter id"),"name": input("enter name"), "quantity":input("enter quantity"), "price": input("enter price")})
+ displayItems()
  return
 
 def displayItems():
