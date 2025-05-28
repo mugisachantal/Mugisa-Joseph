@@ -15,10 +15,21 @@ my_list = [1, 2, 3, 4, 5]
 sum_of_list = list(map(lambda x: x*x, my_list))
 print(sum_of_list)
 
-#exercise4
-try:
-    if(5>0):
-        print("its a postive number")
-except:
-    
-            
+#exercise4 Realworld example
+
+ 
+
+celsius_readings = [22.5, 23.1, 21.9, 150.0, 24.0, -10.0, 22.8]
+
+# expression for item in iterable if condition
+fahrenheit_readings_filtered_lc = [
+    (celsius * 9/5) + 32
+    for celsius in celsius_readings
+    if 0 <= celsius <= 100
+]
+
+print("Fahrenheit readings (list comprehension):", fahrenheit_readings_filtered_lc)
+
+
+names=list(('jose','makos','oscar'))
+print(len(names))
